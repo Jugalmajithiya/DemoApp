@@ -21,8 +21,9 @@ class OrderSummaryFragment : BaseFragment() {
 
     override fun initView() {
         binding.btnProcessPrescription.setOnClickListener(this)
+        binding.ivBack.setOnClickListener(this)
         orderItemAdapter = OrderItemAdapter(requireActivity()) { data, position ->
-            requireActivity().replaceFragment(R.id.nav_host_fragment, OrderSummaryFragment(), true)
+            requireActivity().replaceFragment(R.id.mainContainer, OrderSummaryFragment(), true)
         }
         val list = arrayListOf<String>()
         for (i in 0..2) {
@@ -36,7 +37,10 @@ class OrderSummaryFragment : BaseFragment() {
     override fun onClickSafe(view: View) {
         when (view.id) {
             R.id.btnProcessPrescription -> {
-                requireActivity().replaceFragment(R.id.nav_host_fragment,ConfirmOrderFragment())
+                requireActivity().replaceFragment(R.id.mainContainer,ConfirmOrderFragment())
+            }
+            R.id.ivBack->{
+                requireActivity().onBackPressed()
             }
         }
     }

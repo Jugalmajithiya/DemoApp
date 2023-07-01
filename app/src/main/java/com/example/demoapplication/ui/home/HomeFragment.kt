@@ -7,8 +7,10 @@ import com.example.demoapplication.databinding.FragmentHomeBinding
 import com.example.demoapplication.ui.home.adapter.DrugPrescribedAdapter
 import com.example.demoapplication.ui.home.adapter.RecentlyViewedAdapter
 import com.example.demoapplication.ui.home.adapter.TopListAdapter
+import com.example.demoapplication.ui.main.MainActivity
 import com.example.demoapplication.ui.ordersummary.OrderSummaryFragment
 import com.example.demoapplication.utils.base.BaseFragment
+import com.example.demoapplication.utils.launchActivity
 import com.example.demoapplication.utils.replaceFragment
 
 
@@ -31,7 +33,10 @@ class HomeFragment : BaseFragment() {
 
         }
         recentlyViewedAdapter= RecentlyViewedAdapter(requireActivity()) {data,position->
-            requireActivity().replaceFragment(R.id.nav_host_fragment,OrderSummaryFragment(),true)
+            requireActivity().apply {
+                launchActivity<MainActivity> {}
+                finish()
+            }
         }
         val list = arrayListOf<String>()
         for (i in 0..10){

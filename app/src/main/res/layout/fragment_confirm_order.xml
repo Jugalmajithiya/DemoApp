@@ -181,12 +181,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/_6sdp"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:layout_marginHorizontal="@dimen/_8sdp"
             android:background="@drawable/btn_rounded_shape_white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardSubscription">
+
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etPromoCode"
@@ -214,6 +215,95 @@
                 app:layout_constraintTop_toTopOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSecure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@string/secure_options_in_checkout"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintPromo"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCardlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_card_logo"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecure"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_total_price"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray_8A8A8E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCardlogo"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDeliveryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Fee"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray_8A8A8E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubTotal"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDiscounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discounts"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray_8A8A8E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryFee"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubDiscounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscription discount"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray_8A8A8E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiscounts"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubtotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="$18.99"
+            android:textColor="@color/black_22292E"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSubTotal"
+            app:layout_constraintTop_toTopOf="@+id/tvSubTotal" />
+
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnProcessPrescription"
             android:layout_width="match_parent"
@@ -228,7 +318,7 @@
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintPromo" />
+            app:layout_constraintTop_toBottomOf="@+id/tvSubDiscounts" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

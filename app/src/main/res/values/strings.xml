@@ -16,8 +16,6 @@
     <string name="recent_order">Recent order</string>
     <string name="subscribe_now_for_exclusive_benefits">Subscribe now for exclusive benefits.</string>
     <string name="drugs_you_re_prescribed">Drugs you\'re prescribed.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="order_placed">Order placed</string>
     <string name="total">Total</string>
     <string name="process_prescription">Process Prescription</string>
@@ -29,4 +27,10 @@
     <string name="apply">APPLY</string>
     <string name="confirm_and_proceed">Confirm and proceed</string>
     <string name="get_20_off_of_your_order_subscribe_now">Get 20% off of your order, Subscribe now.</string>
+    <string name="secure_options_in_checkout">Secure options in checkout</string>
+    <string name="sub_total_price">Sub total Price</string>
+    <string name="welcome_screen">Splash Screen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
