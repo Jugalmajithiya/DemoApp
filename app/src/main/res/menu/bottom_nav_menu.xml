@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationHome"
+        android:checked="true"
+        android:icon="@drawable/home_icon_selected"
+        android:title="@string/home"
+        />
+    <item
+        android:id="@+id/navigationNotification"
+        android:checked="false"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/notification" />
+    <item
+        android:id="@+id/navigationOrder"
+        android:checked="false"
+        android:icon="@drawable/ic_order"
+        android:title="@string/order" />
+    <item
+        android:id="@+id/navigationInvoice"
+        android:checked="false"
+        android:icon="@drawable/ic_invoice"
+        android:title="@string/invoice" />
+</menu>
