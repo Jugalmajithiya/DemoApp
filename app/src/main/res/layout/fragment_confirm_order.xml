@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_8sdp"
             android:layout_marginTop="@dimen/_8sdp"
-            android:src="@drawable/ic_location"
+            android:src="@drawable/ic_location_marker"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvOrderId" />
 
@@ -157,7 +157,7 @@
                 android:text="@string/get_20_off_of_your_order_subscribe_now"
                 android:maxLines="3"
                 android:padding="@dimen/_6sdp"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:background="@color/black"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"

@@ -10,6 +10,6 @@ class UserRepository(
     private val apiInterface: ApiInterface
 ) : SafeApiRequest() {
 
-//    suspend fun getProductData() =
-//        apiInterface.getDataRequest()
+    suspend fun getProductData() =
+        apiInterface.getDataRequest()
 }

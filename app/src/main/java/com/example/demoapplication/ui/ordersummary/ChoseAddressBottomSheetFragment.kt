@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
+import com.example.demoapplication.R
 import com.example.demoapplication.databinding.FragmentChoseAddressBottomSheetBinding
+import com.example.demoapplication.ui.address.AddNewAddressFragment
+import com.example.demoapplication.utils.replaceFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
@@ -31,6 +34,10 @@ class ChoseAddressBottomSheetFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.ctvAddress.setOnClickListener {
             binding.ctvAddress.isChecked = !binding.ctvAddress.isChecked
+        }
+        binding.ivAddNewAddress.setOnClickListener {
+            this@ChoseAddressBottomSheetFragment.dismiss()
+            requireActivity().replaceFragment(R.id.mainContainer, AddNewAddressFragment())
         }
     }
 

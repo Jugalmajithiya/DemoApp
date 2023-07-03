@@ -1,9 +1,15 @@
 package com.example.demoapplication.utils
 
+import android.Manifest
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.ContentResolver
 import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
+import android.location.LocationManager
 import android.net.Uri
+import android.os.Looper
 import android.provider.OpenableColumns
 import android.provider.Settings
 import android.util.Log
@@ -11,6 +17,12 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import com.example.demoapplication.R
+import com.google.android.gms.location.LocationCallback
+import com.google.android.gms.location.LocationRequest
+import com.google.android.gms.location.LocationResult
+import com.google.android.gms.location.LocationServices
 import com.google.android.material.snackbar.Snackbar
 import java.text.DateFormat
 import java.text.NumberFormat

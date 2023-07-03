@@ -30,7 +30,15 @@
     <string name="secure_options_in_checkout">Secure options in checkout</string>
     <string name="sub_total_price">Sub total Price</string>
     <string name="welcome_screen">Splash Screen</string>
+    <string name="enter_an_address">Enter an address</string>
+    <string name="search">Search</string>
+    <string name="address_name">Address name</string>
+    <string name="save">Save</string>
+    <string name="permission_location_msg">This app need to access your location. Please allow from setting</string>
+    <string name="open_setting">Open Setting</string>
+    <string name="api">AIzaSyBZF6sPLLkF0h0ETARIhazjTEaW02doHAM</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="search_address">Search address</string>
+    <string name="recently_viewed">Recently viewed</string>
 </resources>
