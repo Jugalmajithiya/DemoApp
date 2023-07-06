@@ -8,9 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:layout_marginHorizontal="@dimen/_4sdp"
-        android:paddingHorizontal="@dimen/_4sdp">
+        android:layout_marginTop="@dimen/_16sdp">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/lblDeliverTo"
@@ -18,6 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
             android:fontFamily="@font/poppins_regular"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:text="@string/deliver_to"
             android:textColor="#66000000"
             android:textSize="@dimen/_12ssp"
@@ -30,6 +29,7 @@
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/ic_bottom_dropdown"
             android:drawablePadding="@dimen/_4sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:fontFamily="@font/poppins_medium"
             android:text="22 Pleasant Hill Road"
             android:textColor="@color/black"
@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:text="Hello,\nAndrew Foley"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_32ssp"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:drawableEnd="@drawable/ic_arrow_icon"
             android:drawablePadding="@dimen/_8sdp"
             android:fontFamily="@font/poppins_bold"
@@ -274,6 +276,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:drawableEnd="@drawable/ic_arrow_icon"
             android:drawablePadding="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/drugs_you_re_prescribed"
             android:textColor="@color/black"
@@ -301,6 +304,7 @@
             android:drawablePadding="@dimen/_8sdp"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/recently_viewed"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintTop_toBottomOf="@+id/rvDrug"
